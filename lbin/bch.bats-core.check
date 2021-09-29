@@ -1,0 +1,8 @@
+#!/bin/sh
+. bch.bats-core.source.sh
+
+location=$(which bats)
+echo location: [$location]
+[ -z "$location"  ] && exit 1
+echo "version: [$(bats -v)]"
+

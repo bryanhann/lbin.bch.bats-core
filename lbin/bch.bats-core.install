@@ -3,4 +3,4 @@
 
 SRC=${BCH_APP_BATSCORE_SRC}
 DST=${BCH_APP_BATSCORE_DST}
-git clone ${SRC}  ${DST}
+[ -d $DST ] || git clone ${SRC}  ${DST}
